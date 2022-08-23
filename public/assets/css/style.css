@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0E0E10;
+    overflow-x: hidden;
+}
+header {
+    width: 100%;
+}
+
+nav {
+    background-color: #18181B;
+}
+
+.navbar {
+    width: 100vw;
+    padding: 1%;
+    display: flex;
+    background-color: #18181B;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 2px #000000;
+}
+
+.navbar img {
+    width: 30px;
+    height: 30px;
+}
+
+.navbar a {
+    margin: 5px 2% 0 2%;
+    
+}
+
+.logoContainer {
+    margin-right: 20%;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+}
+
+.searchBar input {
+    height: 30px;
+    padding-left: 10px;
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 5px;
+}
+
+#searchbar {
+    width: 300px;
+}
+
+.restLogo {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    justify-content: flex-end;
+}
+
+#cvDownload {
+    margin: 0 4% 0 4%;
+    text-decoration: none;
+}
+
+.navbar button {
+    display: flex;
+    align-items: center;
+    background-color: #3A3A3D;
+    border: none;
+    width: 200px;
+    padding: 1%;
+    color: white;
+    border-radius: 5px;
+    justify-content: center;
+    margin-right: 2%;
+    cursor: pointer;
+}
+
+.navbar #cvButton {
+    text-align: center;
+}
+
+#logoProfil {
+    width: 40px;
+    height: 40px;
+}
+
+#contact {
+    cursor: pointer;
+}
+
+/**************** MODAL *************/
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+  /* Modal Content */
+.modal-content {
+    background-color: #000000;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+  /* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.formItem {
+    background-color: #000000;
+}
+
+#name {
+    background-color: #333333;
+    padding: 5%;
+}
+#email {
+background-color: #333333;
+padding: 5%;
+}
+
+#subject {
+    margin-top: 5%;
+}
+
+
+
+input {
+    color: white;
+    width: 100%;
+}
+textarea {
+    color: white;
+    background-color: #333333;
+}
+
+.modal-content h2 {
+    color: #D9D9D9;
+    text-align: center;
+}
+
+.formulaireContact {
+    display: flex;
+    justify-content: center;
+}
+
+.userContainer {
+    width: 100%;
+}
+
+.userInfos {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 5%;
+}
+::placeholder {
+    color: white;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    padding: 30px 61px;
+    border-radius: 4px;
+    color: #D9D9D9;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    margin: 25px;
+    font-family: "Roboto", sans-serif;
+    filter: hue-rotate(0deg);
+    border: 2px solid #d2bdff;
+    transition: all 0.1s linear;
+    cursor: pointer;
+}
+.btn:hover {
+    border: 1px solid transparent;
+}
+.btn:hover span {
+    position: absolute;
+    display: block;
+}
+.btn:hover span:nth-child(1) {
+    filter: hue-rotate(0deg);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #3a86ff);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1 {
+    0% {
+    left: -100%;
+    }
+    50%, 100% {
+    left: 100%;
+    }
+}
+.btn:hover span:nth-child(2) {
+    filter: hue-rotate(60deg);
+    top: -100%;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #3a86ff);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2 {
+    0% {
+    top: -100%;
+    }
+    50%, 100% {
+    top: 100%;
+    }
+}
+.btn:hover span:nth-child(3) {
+    filter: hue-rotate(120deg);
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background: linear-gradient(270deg, transparent, #3a86ff);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.5s;
+}
+@keyframes animate3 {
+    0% {
+    right: -100%;
+    height: 3px;
+    }
+    50%, 100% {
+    height: 2px;
+    right: 100%;
+    }
+}
+.btn:hover span:nth-child(4) {
+    filter: hue-rotate(300deg);
+    bottom: -100%;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #3a86ff);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4 {
+    0% {
+    bottom: -100%;
+    }
+    50%, 100% {
+    bottom: 100%;
+    }
+}
+
+
+
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/assets/css/style.css">
+    <script defer src="./public/assets/js/script.js"></script>
+    <title>Portfolio Alexis Ferrer</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <div class="logoContainer">
+                    <img id="logo" src="/public/assets/img/logopngv3.png" alt="logo">
+                </div>
+                <div class="searchBar">
+                    <input id="searchbar" name="search" placeholder="Rechercher" type="text">
+                </div>
+                <div class="restLogo">
+                    <a href="https://github.com/Lilsan09" title="GitHub" target="_blank"><img id="logoGithub" src="/public/assets/img/signe-github.png" alt="github"></a>
+                    <a href="https://www.linkedin.com/in/alexis-ferrer-8007591b0/" title="Linkedin" target="_blank"><img id="logoLinkedin" src="/public/assets/img/linkedin.png" alt="linkedin"></a>
+                    <a><img id="contact" title="Formulaire de contact" src="/public/assets/img/bulle.png" alt="message"></a>
+                    <a id="cvDownload" href="/public/assets/download/CValexisferrer.pdf" download="CvFerrerAlexis.pdf"><button id="cvButton" type="button"><img id="logoCV" src="/public/assets/img/logoCV.png" alt="logoCV">Télécharger mon CV</button></a>
+                    <img id="logoProfil" src="./public/assets/img/iconeprofil.png" alt="logoProfil">
+                </div>
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>Contactez moi !</h2>
+                        <div class="formulaireContact">
+                            <form action="">
+                                <div class="userContainer">
+                                    <div class="userInfos">
+                                        <div class="name formItem">
+                                            <label for="name formItem"></label>
+                                            <input type="text" name="name" id="name" placeholder="Votre nom" required>
+                                        </div>
+                                        <div class="mailAdress formItem">
+                                            <label for="email"></label>
+                                            <input type="text" name="email" id="email" placeholder="Votre adresse email" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="message formItem"> -->
+                                    <label for="subject"></label>
+                                    <textarea name="subject" id="subject" cols="30" rows="10" placeholder="Votre message"></textarea>
+                                <!-- </div> -->
+                                <div class="btn">
+                                    <!-- <button id="btnSubmit" type="submit"><span>Envoyer!</span></button> -->
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    Envoyer !
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+</body>
+</html>
